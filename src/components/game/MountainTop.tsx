@@ -38,8 +38,8 @@ export default function MountainTop() {
         <meshBasicMaterial color="#FFD700" transparent opacity={0.3} />
       </mesh>
 
-      {/* Light */}
-      <pointLight position={[0, 3, 0]} color="#FFD700" intensity={5} distance={30} />
+      {/* Light - reduced intensity/distance for performance */}
+      <pointLight position={[0, 3, 0]} color="#FFD700" intensity={3} distance={20} />
 
       {/* Flag pole at summit */}
       <mesh position={[0, 1.5, 0]}>

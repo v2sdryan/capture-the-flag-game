@@ -39,8 +39,8 @@ export default function TeamBase({ team }: TeamBaseProps) {
         <meshLambertMaterial color={color} />
       </mesh>
 
-      {/* Light */}
-      <pointLight position={[0, 4, 0]} color={lightColor} intensity={3} distance={15} />
+      {/* Light - reduced for performance */}
+      <pointLight position={[0, 4, 0]} color={lightColor} intensity={2} distance={10} />
     </group>
   )
 }
